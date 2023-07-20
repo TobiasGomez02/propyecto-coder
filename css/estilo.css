@@ -1,0 +1,165 @@
+body {
+    padding-top: 60px;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.jumbotron {
+    background-image: url(../img/cervezafondo.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+}
+
+
+
+.section {
+    padding: 60px 0;
+    color: #fff;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.section-content p {
+    font-size: 18px;
+}
+
+
+.seccion-cerveza{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:50px ;
+}
+
+@media (min-width:576px){
+    .seccion-cerveza{
+        flex-direction: row;
+    }
+    .seccion-cerveza article{
+        width: 30%;
+    }
+}
+
+.seccion-cerveza article{
+    background-color: #D6E8DB;
+    width: 100%;
+    border: black 3px solid;
+    border-radius: 2%;
+}
+
+.rubia{
+    display: flex;
+    height: 250px;
+}
+
+.rubia img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+.rubia img:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    filter: contrast(120%);
+}
+
+.roja{
+    display: flex;
+    height: 250px;
+}
+
+.roja img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+.roja img:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    filter: contrast(120%);
+}
+
+.negra{
+    display: flex;
+    height: 250px; 
+}
+
+.negra img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+.negra img:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    filter: contrast(120%);
+}
+.relax{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width:576px){
+    .relax  {
+        flex-direction: row;
+    }
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carousel-inner{
+    height: 50vh;
+}
+
+.carousel-inner div img{
+height: 75vh;
+}
